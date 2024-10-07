@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torrent Uploads</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Torrent Uploads</h1>
+        <div class="search-container">
+            <select id="categoryFilter">
+                <option value="">Todas as Categorias</option>
+                <option value="Animação">Animação</option>
+                <option value="Ação">Ação</option>
+                <option value="Terror">Terror</option>
+                <option value="Comédia">Comédia</option>
+                <option value="Drama">Drama</option>
+            </select>
+            <input type="text" id="search" placeholder="Pesquisar filme...">
+            <button id="searchBtn">🔍</button>
+        </div>
+        <button id="uploadPageBtn">Fazer Upload</button>
+    </header>
+
+    <main id="homePage">
+        <div id="uploadsList"></div>
+    </main>
+
+    <div id="uploadPage" style="display:none;">
+        <h2>Fazer Upload</h2>
+        <form id="uploadForm">
+            <input type="text" id="magnetLink" placeholder="Link Magnet" required>
+            <input type="file" id="fileImage" accept="image/jpeg,image/png" required>
+            <input type="text" id="description" placeholder="Descrição" required>
+            <select id="category">
+                <option value="Animação">Animação</option>
+                <option value="Ação">Ação</option>
+                <option value="Terror">Terror</option>
+                <option value="Comédia">Comédia</option>
+                <option value="Drama">Drama</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+        <button id="backBtn">Voltar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

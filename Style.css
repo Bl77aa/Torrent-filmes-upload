@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ff5722;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.search-container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#categoryFilter, #search {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#search {
+    width: 200px;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+}
+
+#uploadPageBtn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+#uploadsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.upload-item {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ff5722;
+    background-color: #282828;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s;
+}
+
+.upload-item:hover {
+    transform: scale(1.05);
+}
+
+.upload-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
